@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB21667E28B77976006B6039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21667D28B77976006B6039 /* AppDelegate.swift */; };
+		AB21668028B77976006B6039 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21667F28B77976006B6039 /* SceneDelegate.swift */; };
+		AB21668228B77976006B6039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21668128B77976006B6039 /* ViewController.swift */; };
+		AB21668528B77976006B6039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB21668328B77976006B6039 /* Main.storyboard */; };
+		AB21668728B77979006B6039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB21668628B77979006B6039 /* Assets.xcassets */; };
+		AB21668A28B77979006B6039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB21668828B77979006B6039 /* LaunchScreen.storyboard */; };
+		AB21669528B77C1C006B6039 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21669428B77C1C006B6039 /* House.swift */; };
+		AB21669728B7905E006B6039 /* HousesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21669628B7905E006B6039 /* HousesVM.swift */; };
+		AB21669A28B792D0006B6039 /* GOTH.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21669928B792D0006B6039 /* GOTH.swift */; };
+		ABD977D428B79D42000D5C87 /* ERProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977D228B79D42000D5C87 /* ERProgressHud.swift */; };
+		ABD977D528B79D42000D5C87 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977D328B79D42000D5C87 /* Reachability.swift */; };
+		ABD977D728B79D56000D5C87 /* IPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977D628B79D56000D5C87 /* IPImage.swift */; };
+		ABD977DC28B7A690000D5C87 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977DA28B7A690000D5C87 /* DetailsVC.swift */; };
+		ABD977E028B7A749000D5C87 /* HouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977DF28B7A749000D5C87 /* HouseCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB21667A28B77976006B6039 /* Game of Thrones Houses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of Thrones Houses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB21667D28B77976006B6039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB21667F28B77976006B6039 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB21668128B77976006B6039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB21668428B77976006B6039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB21668628B77979006B6039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB21668928B77979006B6039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB21668B28B77979006B6039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB21669428B77C1C006B6039 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		AB21669628B7905E006B6039 /* HousesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesVM.swift; sourceTree = "<group>"; };
+		AB21669928B792D0006B6039 /* GOTH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTH.swift; sourceTree = "<group>"; };
+		ABD977D228B79D42000D5C87 /* ERProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERProgressHud.swift; sourceTree = "<group>"; };
+		ABD977D328B79D42000D5C87 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		ABD977D628B79D56000D5C87 /* IPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPImage.swift; sourceTree = "<group>"; };
+		ABD977DA28B7A690000D5C87 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		ABD977DF28B7A749000D5C87 /* HouseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB21667728B77976006B6039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB21667128B77976006B6039 = {
+			isa = PBXGroup;
+			children = (
+				AB21667C28B77976006B6039 /* Game of Thrones Houses */,
+				AB21667B28B77976006B6039 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB21667B28B77976006B6039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB21667A28B77976006B6039 /* Game of Thrones Houses.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB21667C28B77976006B6039 /* Game of Thrones Houses */ = {
+			isa = PBXGroup;
+			children = (
+				AB21669828B792B9006B6039 /* Support Files */,
+				AB21669328B779D8006B6039 /* Controller */,
+				AB21669228B779D2006B6039 /* Model */,
+				AB21669128B779CB006B6039 /* View */,
+				AB21667D28B77976006B6039 /* AppDelegate.swift */,
+				AB21667F28B77976006B6039 /* SceneDelegate.swift */,
+				AB21668B28B77979006B6039 /* Info.plist */,
+			);
+			path = "Game of Thrones Houses";
+			sourceTree = "<group>";
+		};
+		AB21669128B779CB006B6039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB21668828B77979006B6039 /* LaunchScreen.storyboard */,
+				AB21668328B77976006B6039 /* Main.storyboard */,
+				AB21668628B77979006B6039 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB21669228B779D2006B6039 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB21669428B77C1C006B6039 /* House.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB21669328B779D8006B6039 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABD977DE28B7A716000D5C87 /* Cells */,
+				AB21669628B7905E006B6039 /* HousesVM.swift */,
+				AB21668128B77976006B6039 /* ViewController.swift */,
+				ABD977DA28B7A690000D5C87 /* DetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB21669828B792B9006B6039 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABD977D128B79CF6000D5C87 /* Extensions */,
+				AB21669928B792D0006B6039 /* GOTH.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		ABD977D128B79CF6000D5C87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABD977D228B79D42000D5C87 /* ERProgressHud.swift */,
+				ABD977D328B79D42000D5C87 /* Reachability.swift */,
+				ABD977D628B79D56000D5C87 /* IPImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABD977DE28B7A716000D5C87 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ABD977DF28B7A749000D5C87 /* HouseCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB21667928B77976006B6039 /* Game of Thrones Houses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB21668E28B77979006B6039 /* Build configuration list for PBXNativeTarget "Game of Thrones Houses" */;
+			buildPhases = (
+				AB21667628B77976006B6039 /* Sources */,
+				AB21667728B77976006B6039 /* Frameworks */,
+				AB21667828B77976006B6039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Game of Thrones Houses";
+			productName = "Game of Thrones Houses";
+			productReference = AB21667A28B77976006B6039 /* Game of Thrones Houses.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB21667228B77976006B6039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					AB21667928B77976006B6039 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AB21667528B77976006B6039 /* Build configuration list for PBXProject "Game of Thrones Houses" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB21667128B77976006B6039;
+			productRefGroup = AB21667B28B77976006B6039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB21667928B77976006B6039 /* Game of Thrones Houses */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB21667828B77976006B6039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB21668A28B77979006B6039 /* LaunchScreen.storyboard in Resources */,
+				AB21668728B77979006B6039 /* Assets.xcassets in Resources */,
+				AB21668528B77976006B6039 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB21667628B77976006B6039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB21668228B77976006B6039 /* ViewController.swift in Sources */,
+				ABD977D428B79D42000D5C87 /* ERProgressHud.swift in Sources */,
+				AB21667E28B77976006B6039 /* AppDelegate.swift in Sources */,
+				AB21669728B7905E006B6039 /* HousesVM.swift in Sources */,
+				AB21669A28B792D0006B6039 /* GOTH.swift in Sources */,
+				AB21669528B77C1C006B6039 /* House.swift in Sources */,
+				ABD977D528B79D42000D5C87 /* Reachability.swift in Sources */,
+				AB21668028B77976006B6039 /* SceneDelegate.swift in Sources */,
+				ABD977D728B79D56000D5C87 /* IPImage.swift in Sources */,
+				ABD977E028B7A749000D5C87 /* HouseCell.swift in Sources */,
+				ABD977DC28B7A690000D5C87 /* DetailsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB21668328B77976006B6039 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB21668428B77976006B6039 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB21668828B77979006B6039 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB21668928B77979006B6039 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB21668C28B77979006B6039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB21668D28B77979006B6039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB21668F28B77979006B6039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X765PUNMQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Game of Thrones Houses/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = G.O.T.H;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ug.code.gameofthroneshouses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB21669028B77979006B6039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X765PUNMQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Game of Thrones Houses/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = G.O.T.H;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ug.code.gameofthroneshouses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB21667528B77976006B6039 /* Build configuration list for PBXProject "Game of Thrones Houses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB21668C28B77979006B6039 /* Debug */,
+				AB21668D28B77979006B6039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB21668E28B77979006B6039 /* Build configuration list for PBXNativeTarget "Game of Thrones Houses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB21668F28B77979006B6039 /* Debug */,
+				AB21669028B77979006B6039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB21667228B77976006B6039 /* Project object */;
+}
