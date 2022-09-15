@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate,
+                      UITableViewDataSource {
     
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var houseTableView: UITableView!
@@ -15,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var houseList = [House]()
     let reachability = try! Reachability()
     
-    //MARK:- Activity Lifecycle
+    //MARK: - Activity Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         houseTableView.delegate = self
@@ -24,7 +25,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged,
+                                               object: reachability)
         do {
             try reachability.startNotifier()
         } catch {
@@ -36,26 +38,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let reachability = note.object as! Reachability
         switch reachability.connection {
         case .wifi:
-            print(GOTH.AppMessages.wifi)
+            print(Constants.AppMessages.wifi)
         case .cellular:
-            print(GOTH.AppMessages.mobile)
+            print(Constants.AppMessages.mobile)
         case .unavailable:
-            self.navBar.topItem?.title = GOTH.AppMessages.unavailable
-            print(GOTH.AppMessages.unavailable)
+            self.navBar.topItem?.title = Constants.AppMessages.unavailable
+            print(Constants.AppMessages.unavailable)
         case .none:
-            self.navBar.topItem?.title = GOTH.AppMessages.noConnection
-            print(GOTH.AppMessages.noConnection)
+            self.navBar.topItem?.title = Constants.AppMessages.noConnection
+            print(Constants.AppMessages.noConnection)
         }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         reachability.stopNotifier()
-        NotificationCenter.default.removeObserver(self, name: .reachabilityChanged, object: reachability)
+        NotificationCenter.default.removeObserver(self, name:
+                .reachabilityChanged, object: reachability)
     }
     
     
-    //MARK:- UI Table View Start
+    //MARK: - UI Table View Start
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return houseList.count
     }
@@ -67,7 +70,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.houseRegion.text = house.region
             cell.coatOfArms.text = house.coatOfArms
             let newName = house.name.replacingOccurrences(of: "House ", with: "")
-            cell.houseImage.image = IPImage(text: newName, radius: 25, font: nil, textColor: nil, randomBackgroundColor: true).generateImage()
+            cell.houseImage.image = IPImage(text: newName, radius: 25, font: nil,
+                                            textColor: nil, randomBackgroundColor: true).generateImage()
         }
         return cell
     }
@@ -78,12 +82,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.present(deatilVC, animated: true)
 
     }
-    //MARK:- UI Table View End
     
     
-    //MARK:- Get JSON Data
+    //MARK: - Get JSON Data
     func downloadJSON() {
-        ERProgressHud.sharedInstance.show(withTitle: GOTH.AppMessages.load)
+        ERProgressHud.sharedInstance.show(withTitle: Constants.AppMessages.load)
         housesVM.housesCompletionHandler{ [weak self] (status, houses, message) in
             guard self != nil else {return}
             if status {
@@ -96,7 +99,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     ERProgressHud.sharedInstance.hide()
                 }
         }
-        housesVM.getHouses(URL(string: "\(GOTH.mainURL)houses")!)
+        housesVM.getHouses(URL(string: "\(Constants.mainURL)houses")!)
     }
     
     

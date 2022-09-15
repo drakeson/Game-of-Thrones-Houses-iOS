@@ -23,7 +23,7 @@ class DetailsVC: UIViewController {
         updateUI()
     }
     
-    //MARK:- Update UI
+    //MARK: - Update UI
     func updateUI(){
         self.navBar.topItem?.title = house?.name
         houseName.text = house?.name
@@ -41,11 +41,15 @@ class DetailsVC: UIViewController {
         }
         
         let newName = house?.name.replacingOccurrences(of: "House ", with: "")
-        houseImage.image = IPImage(text: newName!, radius: 25, font: nil, textColor: nil, randomBackgroundColor: true).generateImage()
+        houseImage.image = IPImage(text: newName!, radius: 25, font: nil,
+                                   textColor: nil, randomBackgroundColor: true).generateImage()
     }
 
     
     
-    @IBAction func backButton(_ sender: Any) {self.dismiss(animated: true, completion: nil)}
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
     
 }

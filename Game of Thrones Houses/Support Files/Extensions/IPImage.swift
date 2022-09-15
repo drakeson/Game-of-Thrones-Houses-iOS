@@ -7,15 +7,9 @@
 
 import UIKit
 
-/**
- The class that generates circular UIImage objects.
- */
 public class IPImage: NSObject {
     
     //MARK: - Properties
-    /**
-     Input text. The first letter from the first and last word (depending on number of words) will be text at the center of the image.
-    */
     public var text:String = ""
     
     private var _radius:Double = 0
@@ -34,69 +28,19 @@ public class IPImage: NSObject {
         }
     }
     
-    /**
-     Font for the text.
-     
-     If it is not initialized before `generateImage()`, it will be assigned with a value:
-     
-         UIFont.systemFont(ofSize: CGFloat(radius))
-    */
     public var font:UIFont?
-    
-    /**
-     Color for the text.
-     
-     If it is not initialized before `generateImage()`, it will default to `UIColor.white`
-     */
     public var textColor:UIColor?
-    
-    /**
-     Fill color of the circular image.
-     
-     If it is not initialized before `generateImage()`, it will default to `UIColor.gray`
-     */
     public var backgroundColor:UIColor?
-    
-    //MARK: - Initailization
-    /**
-     Initialize an IPImage object. The default value of `radius` is 25. `text` is empty.
-    */
     public convenience override init() {
         self.init(text: "", radius: 25)
     }
     
-    /**
-     Initialize an IPImage object.
-     
-     - Parameters:
-         - text: Source of the initials
-         - radius: Circular image radius
-     */
     public convenience init(text: String, radius: Double) {
         self.init(text: text, radius: radius, font: nil)
     }
-    
-    /**
-     Initialize an IPImage object.
-     
-     - Parameters:
-         - text: Source of the initials
-         - radius: Circular image radius
-         - font: Font for the text at the center
-     */
     public convenience init(text: String, radius: Double, font: UIFont?) {
         self.init(text: text, radius: radius, font: font, textColor: nil, randomBackgroundColor: false)
     }
-    
-    /**
-     Initialize an IPImage object.
-     
-     - Parameters:
-         - text: Source of the initials
-         - radius: Circular image radius
-         - textColor: Color of the text at the center
-         - randomBackgroundColor: Randomized fill color
-     */
     public init(text: String, radius: Double, font: UIFont?, textColor: UIColor?, randomBackgroundColor: Bool) {
         super.init()
         
@@ -116,16 +60,6 @@ public class IPImage: NSObject {
         }
         
     }
-    
-    /**
-     Initialize an IPImage object.
-     
-     - Parameters:
-         - text: Source of the initials
-         - radius: Circular image radius
-         - textColor: Color of the text at the center
-         - backgroundColor: Randomized fill color
-     */
     public init(text: String, radius: Double, font: UIFont?, textColor: UIColor?, backgroundColor: UIColor?) {
         super.init()
         
@@ -188,32 +122,9 @@ public class IPImage: NSObject {
         mask.path = UIBezierPath(ovalIn: CGRect(x: view.bounds.midX - width / 2, y: view.bounds.midY - width / 2, width: width, height: width)).cgPath
         view.layer.mask = mask
         
-//        //TESTING
-//        view.layer.shouldRasterize = true
-//        view.layer.rasterizationScale = UIScreen.main.scale
-        
     }
     
     //MARK: - Text Generation
-    
-    /**
-     Generates the initials from the value of `text`. For example:
-     
-         text = "Harry"
-     
-     the result will be: **H**. If:
-     
-         text = "Harry Potter"
-     
-     the result will be: **HP**. And, if:
-     
-         text = "Harry Potter Jr."
-     
-     the result will be **HJ**.
-     
-     
-     - Returns: String which is one or two charaters long depending on the number of words in `text`.
-    */
     public func initials() -> String {
         
         let names = text.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: " ")
@@ -242,12 +153,6 @@ public class IPImage: NSObject {
     }
     
     //MARK: - Image Generation
-    
-    /**
-     Call to generate the resulting image.
-     
-     - Returns: Circular image
-    */
     public func generateImage() -> UIImage? {
         
         let view = setupView()
@@ -256,7 +161,6 @@ public class IPImage: NSObject {
         view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-//        print(image ?? "No image")
         return image
     }
     

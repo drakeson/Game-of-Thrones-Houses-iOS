@@ -15,7 +15,7 @@
 		AB21668A28B77979006B6039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB21668828B77979006B6039 /* LaunchScreen.storyboard */; };
 		AB21669528B77C1C006B6039 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21669428B77C1C006B6039 /* House.swift */; };
 		AB21669728B7905E006B6039 /* HousesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21669628B7905E006B6039 /* HousesVM.swift */; };
-		AB21669A28B792D0006B6039 /* GOTH.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21669928B792D0006B6039 /* GOTH.swift */; };
+		AB21669A28B792D0006B6039 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21669928B792D0006B6039 /* Constants.swift */; };
 		ABD977D428B79D42000D5C87 /* ERProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977D228B79D42000D5C87 /* ERProgressHud.swift */; };
 		ABD977D528B79D42000D5C87 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977D328B79D42000D5C87 /* Reachability.swift */; };
 		ABD977D728B79D56000D5C87 /* IPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD977D628B79D56000D5C87 /* IPImage.swift */; };
@@ -34,7 +34,7 @@
 		AB21668B28B77979006B6039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB21669428B77C1C006B6039 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		AB21669628B7905E006B6039 /* HousesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesVM.swift; sourceTree = "<group>"; };
-		AB21669928B792D0006B6039 /* GOTH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTH.swift; sourceTree = "<group>"; };
+		AB21669928B792D0006B6039 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ABD977D228B79D42000D5C87 /* ERProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERProgressHud.swift; sourceTree = "<group>"; };
 		ABD977D328B79D42000D5C87 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		ABD977D628B79D56000D5C87 /* IPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPImage.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				ABD977D128B79CF6000D5C87 /* Extensions */,
-				AB21669928B792D0006B6039 /* GOTH.swift */,
+				AB21669928B792D0006B6039 /* Constants.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				ABD977D428B79D42000D5C87 /* ERProgressHud.swift in Sources */,
 				AB21667E28B77976006B6039 /* AppDelegate.swift in Sources */,
 				AB21669728B7905E006B6039 /* HousesVM.swift in Sources */,
-				AB21669A28B792D0006B6039 /* GOTH.swift in Sources */,
+				AB21669A28B792D0006B6039 /* Constants.swift in Sources */,
 				AB21669528B77C1C006B6039 /* House.swift in Sources */,
 				ABD977D528B79D42000D5C87 /* Reachability.swift in Sources */,
 				AB21668028B77976006B6039 /* SceneDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  GOTH.swift
+//  Constants.swift
 //  Game of Thrones Houses
 //
 //  Created by Kato Drake Smith on 25/08/2022.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct GOTH {
+struct Constants {
     
     static let mainURL = "https://anapioficeandfire.com/api/"
     
-    //MARK:- MESSAGES
+    //MARK: - MESSAGES
     struct AppMessages {
         static let success = "Successful"
         static let error = "Error fetching data from api"
@@ -23,7 +23,7 @@ struct GOTH {
         static let noConnection = "No Connection"
     }
     
-    //MARK:- ServerMessages
+    //MARK: - ServerMessages
     struct ServerMessages {
         static let m404 = "No Items Found"
         static let m500 = "Server Error"
